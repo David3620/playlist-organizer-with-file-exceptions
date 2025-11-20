@@ -6,7 +6,7 @@ using std::endl;
 using std::cin;
 using std::flush;
 using std::string;
-//g++ main.cpp Playlist.cpp PlayNode.cpp
+
 void PrintMenu( string playlistTitle)
 {
     cout<<playlistTitle<<" PLAYLIST MENU"<<endl;
