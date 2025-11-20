@@ -41,8 +41,6 @@ class PlayNode
     friend ostream& operator<<(ostream& out, PlayNode& node)
     {   
         out<<"Unique ID: "<<node.ID<<"|Song Name: "<<node.songname<<"|Artist Name: "<<node.artistname<<"|Song Length (in seconds): "<<node.length;
-        //outnode.ID<<"|"<<node.songname<<"|"<<node.artistname<<"|"<<node.length;// orginal
-        
         return out;
     };
 
@@ -53,9 +51,7 @@ class PlayNode
         getline(infs,node.ID,delimiter);
         getline(infs,node.songname,delimiter);
         getline(infs,node.artistname,delimiter);
-        // string num;
-        // getline(infs,num);
-        // node.length=std::stoi(num);
+      
         string line;
         int num;
         istringstream iss;
@@ -65,12 +61,7 @@ class PlayNode
         getline(iss,line,del);
         iss>>num;
         node.length=num;
-        //istringstream num(line);
-        //num>>line;
-        //node.length=stoi(line);
       
-
-        
         return infs;
     };
 };
